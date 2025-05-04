@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # Upper bound
     b = 0
     # Define the tolerance
-    tol = 1e-9
+    tol = 1e-6
 
     # Find the root of the function and calculated the number of iterations used
     bisection_method(func, a, b, tol)
