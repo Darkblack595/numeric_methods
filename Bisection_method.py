@@ -1,5 +1,6 @@
 import sympy as sp
 
+
 def bisection_method(func, a, b, tol=1e-5):
     """Numeric method used to find the root of a function in a closed
     interval [a, b] by iteratively dividing the interval in half. The
@@ -53,6 +54,11 @@ def theorical_iter_number(a, b, tol=1e-5):
 
 
 if __name__ == "__main__":
+    """Before running the code, make sure to have sympy installed.
+    Make sure to use a continuos function in the interval [a, b] and
+    that f(a) * f(b) < 0. The function must be monotonic in the selected
+    interval.
+    """""
     # Define the function as a symbolic expression
     x = sp.symbols('x')
     # Define the fuction expression
